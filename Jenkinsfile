@@ -1,19 +1,19 @@
 pipeline {
     agent { label 'java'}
     stages {
-                    stage('Build python3.py'){ 
+                    stage('Build serverrequest.py'){ 
                         steps {
-                            sh 'python python3.py'
+                            sh 'python serverrequest.py'
                                }
                                                }
-                    stage('Test python3.py'){ 
+                    stage('Test serverrequest.py'){ 
                         steps {
-                            sh 'python python3.py'
+                            sh 'python serverrequest.py'
                                }
                                              }
-                    stage('Deploy python3.py'){ 
+                    stage('Deploy serverrequest.py'){ 
                         steps {
-                            sh 'python python3.py'
+                            sh 'python serverrequest.py'
                               }
                                                }
                    
